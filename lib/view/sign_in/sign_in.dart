@@ -82,6 +82,7 @@ class _SignInState extends State<SignIn> {
               ),
               TextFormField(
                   controller: _passwordController,
+                obscureText: true,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
                       return "Please Enter Password";
